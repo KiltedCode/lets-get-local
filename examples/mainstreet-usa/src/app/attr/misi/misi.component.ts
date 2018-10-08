@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   <h2>
     {{name}}
   </h2>
-  <img src="./assets/misi.jpg" class="attraction-img" alt="Move it and shake it with Judy and Nick." />
+  <p class="centered">
+    <img src="./assets/misi.jpg" class="attraction-img" alt="Move it and shake it with Judy and Nick." />
+  </p>
   <p>
     Get the party started and celebrate with your favorite Disney and Pixar friends.
     Join the characters and dance in the street to celebrate and bust a move.

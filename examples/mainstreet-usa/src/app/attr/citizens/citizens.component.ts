@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   <h2>
     {{name}}
   </h2>
-  <img src="./assets/citizens.jpg" class="attraction-img" alt="Learn the latest gossip from the turn of the century." />
+  <p class="centered">
+    <img src="./assets/citizens.jpg" class="attraction-img" alt="Learn the latest gossip from the turn of the century." />
+  </p>
   <p>
     Meet the citizens of Main Street in the early 20th century bests.
     These colorful characters will welcome a pleasant chat and pose for a picture with that fancy camera of yours.

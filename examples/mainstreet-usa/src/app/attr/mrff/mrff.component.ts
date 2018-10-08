@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
     <h2>
       {{name}}
     </h2>
-    <img src="./assets/mrff.jpg" class="attraction-img" alt="See all your friends sing, dance, and let it go." />
+    <p class="centered">
+      <img src="./assets/mrff.jpg" class="attraction-img" alt="See all your friends sing, dance, and let it go." />
+    </p>
     <p>
       See Mickey's and his pal sing and dance along side your favorite Disney pals.
       Mickey and the gang each invite some friends to celebrate in this joyous festival.

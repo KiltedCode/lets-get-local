@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
     <h2>
       {{name}}
     </h2>
-    <img src="./assets/trolley.jpg" class="attraction-img" alt="See the trolley kids sing and dance their way down the street." />
+    <p class="centered">
+      <img src="./assets/trolley.jpg" class="attraction-img" alt="See the trolley kids sing and dance their way down the street." />
+    </p>
     <p>
       Watch citizens of Main Street perform their way down the street along side the trolley.
       They sing and dance while the trolley travels from the castle to the train station.
