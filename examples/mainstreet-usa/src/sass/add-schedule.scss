@@ -1,0 +1,39 @@
+.btn-add-schedule {
+  border-radius: 10px;
+  background: $button-bg;
+  cursor: pointer;
+  float: right;
+  padding: 4px 12px;
+  text-align: center;
+}
+
+.message-box {
+  border-radius: 10px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  max-height: 0;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transition: max-height 1s ease-out;
+  width: 250px;
+
+  &.expanded {
+    max-height: 250px;
+    transition: max-height 1s ease-in;
+  }
+
+  &.error-message {
+    background-color: $error-bg;
+  }
+
+  &.success-message {
+    background-color: $success-bg;
+  }
+
+  &.default-message {
+    background-color: $default-bg;
+  }
+}
