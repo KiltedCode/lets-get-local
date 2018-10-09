@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
     {{name}}
   </h2>
   <p class="centered">
-    <img src="./assets/citizens.jpg" class="attraction-img" alt="Learn the latest gossip from the turn of the century." />
+    <img src="./assets/citizens.jpg" class="attraction-img" alt="{{'CITIZENS.IMG_ALT' | translate}}" />
   </p>
-  <p>
+  <p [translate]="'CITIZENS.TEXT_1'">
     Make way for the horseless carriage! And say "How d'you do" to some of the most fascinating folks you'll ever meet.
     Smartly stylish in their early 20th-century finery, these larger-than-life small-town denizens can be spotted along Main Street throughout the day.
   </p>
-  <p>
+  <p [translate]="'CITIZENS.TEXT_2'">
     They're always charmed to make your acquaintance and to bend your ear with the latest local scuttlebutt.
     You might even be treated to a rousing recital from the Main Street choir. And don't forget your new-fangled camera.
     These Citizens will be "pleased as punch" to pose for pictures.

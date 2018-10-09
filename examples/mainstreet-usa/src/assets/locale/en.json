@@ -1,0 +1,48 @@
+{
+  "ABOUT": {
+    "LINK_TEXT": "About Text",
+    "TEXT": "Description text for attractions from <a href=\"https://disneyworld.disney.go.com/\">https://disneyworld.disney.go.com/</a> and &copy; Disney, All Rights Reserved. Alternative image text and other translations completed with Google Translate."
+  },
+  "ADD_SCHEDULE": {
+    "BTN_TEXT": "+ add to my schedule"
+  },
+  "CITIZENS": {
+    "IMG_ALT": "Learn the latest gossip from the turn of the century.",
+    "TEXT_1": "Make way for the horseless carriage! And say \"How d'you do\" to some of the most fascinating folks you'll ever meet. Smartly stylish in their early 20th-century finery, these larger-than-life small-town denizens can be spotted along Main Street throughout the day.",
+    "TEXT_2": "They're always charmed to make your acquaintance and to bend your ear with the latest local scuttlebutt. You might even be treated to a rousing recital from the Main Street choir. And don't forget your new-fangled camera. These Citizens will be \"pleased as punch\" to pose for pictures."
+  },
+  "DAPPER_DANS": {
+    "IMG_ALT": "Enjoy the sweet sounds of their singing.",
+    "TEXT": "Gather'round when the Dapper Dans come to town, the finest barbershop quartet in a 2-block radius! Wearing their colorful pinstriped suits, straw hats and taps, this 4-man group sings a soulful a cappella Americana and Disney tunes. Add tap dancing and “pun”-forgettable vaudeville humor, and you have an act the whole family will enjoy!"
+  },
+  "HOME": {
+    "TITLE": "Main Street U.S.A."
+  },
+  "INTRO": {
+    "TEXT": "Welcome to Main Street U.S.A. in the Magic Kingdom! There is so much to see and do here, so use this guide to get you started. Select one of the above items to read more about what Main Street has to offer."
+  },
+  "MISI": {
+    "IMG_ALT": "Move it and shake it with Judy and Nick.",
+    "TEXT_1": "Brush up on your dance moves, grab your camera and get ready to raise the roof at the most awesome bash ever!",
+    "TEXT_2": "You'll want to party it up when you see giant gift boxes circle in front of Cinderella Castle — their presence means the shindig is about to begin. Use your camera to capture yourself as you bust a move in the middle of the celebration. And be sure to use the tag #MoveitShakeitPics on your posts to keep the digital party going!"
+  },
+  "MRFF": {
+    "IMG_ALT": "See all your friends sing, dance, and let it go.",
+    "TEXT_1": "This summer, skip-a-dee-doo-dah to the Cinderella Castle Forecourt stage for the fairest faire of them all!",
+    "TEXT_2": "It takes a whole enchanted kingdom to put on this all-new, live stage show at Magic Kingdom park—and you’re cordially invited! In preparation for this joyous festival, Mickey and friends have ventured far and wide to gather Disney pals from all over to star in a royal friendship faire.",
+    "TEXT_3": "Goofy has invited Tiana and friends from the Land of the Bewitching Bayous to infuse a little spice of New Orleans jazz in the party. Donald Duck brings some new friends he met at the Snuggly Duckling from the Land of Enchanted Woods to shake their tail feathers. Daisy has asked Rapunzel and Flynn to “comb” over and sing along. Mickey even recruited Olaf, Anna and Elsa from the Land of the Mystic Mountains to cast some extra cool touches!",
+    "TEXT_4": "This grand affair culminates in the joining of classic and contemporary Disney Characters in a spectacular show featuring lively dancing, dazzling effects, an original song and memorable music from The Princess and the Frog, Tangled and Frozen."
+  },
+  "TROLLEY": {
+    "IMG_ALT": "See the trolley kids sing and dance their way down the street.",
+    "TEXT_1": "Dressed in costumes from a bygone era, 12 performers ride a trolley until it stops for them to break out in song and dance. They put on show for whoever is wandering the street.",
+    "TEXT_2": "Bursting with excitement, they belt out tunes such as \"The Most Magical Place on Earth,\" \"Walkin' Right Down the Middle of Main Street, U.S.A.\" and “The Trolley Song\"—all seamlessly strung together and choreographed to lively dance routines.",
+    "TEXT_3": "So, stop when the trolley stops and be dazzled by the show!"
+  },
+  "ERROR": {
+    "ADD_SCHEDULE": "Error adding to schedule."
+  },
+  "SUCCESS": {
+    "ADD_SCHEDULE": "Added \"{{attraction}}\" successfully to schedule."
+  }
+}

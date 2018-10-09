@@ -1,0 +1,48 @@
+{
+  "ABOUT": {
+    "LINK_TEXT": "Sobre o texto",
+    "TEXT": "Texto de descrição para atrações de <a href=\"https://disneyworld.disney.go.com/\">https://disneyworld.disney.go.com/</a> &copy; Disney, odos os direitos reservados. Texto alternativo de imagem e outras traduções concluídas com o Google Tradutor."
+  },
+  "ADD_SCHEDULE": {
+    "BTN_TEXT": "+ adicionar ao meu horário"
+  },
+  "CITIZENS": {
+    "IMG_ALT": "Aprenda as últimas fofocas da virada do século.",
+    "TEXT_1": "Abra caminho para a carruagem motorizada! E diga \"Como vai você?\" a algumas das mais fascinantes figuras que você conhecerá na vida. Elegantemente vestidos em seus trajes do início do século 20, esses inesquecíveis habitantes de cidade pequena podem ser encontrados pela Main Street durante o dia todo.",
+    "TEXT_2": "Eles estão sempre informando quais são as últimas fofocas locais, e adoram essa função! Você pode até ser surpreendido por uma emocionante apresentação do coro da Main Street. E não se esqueça de deixar sua câmera a postos. Eles simplesmente adoram posar para fotos!"
+  },
+  "DAPPER_DANS": {
+    "IMG_ALT": "Aprecie os doces sons de seu canto.",
+    "TEXT": "Chegue mais perto quando os Dapper Dans chegarem à cidade, o melhor quarteto que existe em um raio de dois quarteirões. Usando ternos com listras coloridas, chapéus de palha e sapatos de sapateado, este quarteto interpreta versões emocionantes a capella de canções tradicionais americanas e músicas da Disney. Adicione sapateado ao inesquecível humor vaudeville e o resultado será uma atuação que toda a família vai adorar!"
+  },
+  "HOME": {
+    "TITLE": "Main Street U.S.A."
+  },
+  "INTRO": {
+    "TEXT": "Bem-vindo à Main Street USA no Magic Kingdom! Há muito para ver e fazer aqui, então use este guia para você começar. Selecione um dos itens acima para ler mais sobre o que a Main Street tem a oferecer."
+  },
+  "MISI": {
+    "IMG_ALT": "Mova-se e agite-o com Judy e Nick.",
+    "TEXT_1": "Atualize seus passos de dança, pegue sua câmera e prepare-se para celebrar na festa mais incrível de todos os tempos!",
+    "TEXT_2": "Você entrará no clima da festa quando avistar caixas de presentes gigantes circulando em frente ao Cinderella Castle: elas indicam que o baile está prestes a começar. Use sua câmera para tirar uma foto de você mesmo dançando durante a comemoração. E não deixe de usar a tag #MoveitShakeitPics nos seus posts para manter a festa digital rolando!"
+  },
+  "MRFF": {
+    "IMG_ALT": "Veja todos os seus amigos cantarem, dançarem e deixarem ir.",
+    "TEXT_1": "Nesse verão nos EUA, vá cantando \"skip-a-dee-doo-dah\" até o palco em frente ao Cinderella Castle para a festa mais animada de todas!",
+    "TEXT_2": "Todo o reino encantado foi mobilizado para apresentar esta nova apresentação ao vivo no palco do Magic Kingdom Park, e você está cordialmente convidado! Durante os preparativos para este alegre festival, Mickey e seus amigos viajaram para terras bem distantes em busca de companheiros de todos os lugares para serem as estrelas desta verdadeira celebração da amizade.",
+    "TEXT_3": "O Goofy convidou Tiana e seus amigos da Terra dos Bayous Encantadores Enfeitiçados para adicionar uma pitada do jazz de Nova Orleans à festa. O Donald Duck trouxe novos amigos que encontrou no Snuggly Duckling, na Land of Enchanted Woods, para chacoalhar as penas. A Daisy chamou Rapunzel e Flynn para virem pentear, que dizer, cantar juntos. O Mickey chamou até o Olaf, a Anna e a Elsa da Land of the Mystic Mountains para incluir uns toques refrescantes!",
+    "TEXT_4": "Esta grande festa culmina com a união de vários Personagens Disney, clássicos e atuais, em um show espetacular com danças ao vivo, efeitos fascinantes, uma música original e as canções de A Princesa e o Sapo, Enrolados e Frozen - Uma Aventura Congelante."
+  },
+  "TROLLEY": {
+    "IMG_ALT": "Veja as crianças do bonde cantando e dançando na rua.",
+    "TEXT_1": "Trajados com roupas de uma era antiga, 12 artistas chegam de bondinho e descem na parada para cantar e dançar. Eles fazem um show para quem estiver passeando pela rua.",
+    "TEXT_2": "Com muita animação, eles cantam canções como \"The Most Magical Place on Earth\", \"Walkin' Right Down the Middle of Main Street, U.S.A.\" e \"The Trolley Song\", tudo em perfeita harmonia e com coreografias vibrantes.",
+    "TEXT_3": "Então, quando o bonde parar, encante-se com o show!"
+  },
+  "ERROR": {
+    "ADD_SCHEDULE": "Erro ao adicionar ao agendamento."
+  },
+  "SUCCESS": {
+    "ADD_SCHEDULE": "Adicionado \"{{attraction}}\" com sucesso para agendar."
+  }
+}

@@ -1,12 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PersonalizeService } from '../shared';
 import { timer } from 'rxjs';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'ms-add-schedule',
   template: `
-    <button (click)="addToSchedule()" class="btn-add-schedule">+ add to my schedule</button>
-    <div class="message-box" [ngClass]="messageClass">{{message}}</div>
+    <button (click)="addToSchedule()"
+            class="btn-add-schedule"
+            [translate]="'ADD_SCHEDULE.BTN_TEXT'">
+        + add to my schedule
+      </button>
+    <div class="message-box" [ngClass]="messageClass">{{ message }}</div>
   `,
   styles: []
 })
@@ -20,7 +25,8 @@ export class AddScheduleComponent implements OnInit {
   private messageTypeClass: string;
 
   constructor(
-    private personalizeService: PersonalizeService
+    private personalizeService: PersonalizeService,
+    private translate: TranslateService
   ) { }
 
   ngOnInit() {
@@ -33,10 +39,10 @@ export class AddScheduleComponent implements OnInit {
     this.personalizeService.addAttraction(this.attraction)
         .subscribe(
           (msg: string) => {
-            this.showMessage(msg, 'SUCCESS');
+            this.showMessage(msg, this.attraction, 'SUCCESS');
           },
           error => {
-            this.showMessage(error.msg, 'ERROR');
+            this.showMessage(error.msg, this.attraction, 'ERROR');
           }
         );
   }
@@ -51,21 +57,25 @@ export class AddScheduleComponent implements OnInit {
     this.messageClass = '';
   }
 
-  showMessage(msg: string, type: string): void {
-    this.message = msg;
-    switch (type) {
-      case 'ERROR':
-        this.messageTypeClass = 'error-message';
-        break;
-      case 'SUCCESS':
-        this.messageTypeClass = 'success-message';
-        break;
-      default:
-        this.messageTypeClass = 'default-message';
-    }
-    this.messageClass = 'expanded ' + this.messageTypeClass;
+  showMessage(msg: string, attraction: string, type: string): void {
+    this.translate.get(msg, {attraction: attraction}).subscribe(
+      (res: string) => {
+        this.message = res;
+        switch (type) {
+          case 'ERROR':
+            this.messageTypeClass = 'error-message';
+            break;
+          case 'SUCCESS':
+            this.messageTypeClass = 'success-message';
+            break;
+          default:
+            this.messageTypeClass = 'default-message';
+        }
+        this.messageClass = 'expanded ' + this.messageTypeClass;
 
-    timer(4000).subscribe(() => this.collapseMessage());
+        timer(4000).subscribe(() => this.collapseMessage());
+    });
+
   }
 
 }

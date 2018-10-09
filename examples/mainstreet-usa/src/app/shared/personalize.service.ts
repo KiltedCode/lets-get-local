@@ -13,8 +13,8 @@ export class PersonalizeService {
   addAttraction (attraction: string): Observable<string> {
     this.mockError = (this.mockError + 1) % this.mockErrorCount;
     if (this.mockError === 3) {
-      return throwError({msg: 'Error adding to schedule.'});
+      return throwError({msg: 'ERROR.ADD_SCHEDULE'});
     }
-    return of(`Added ${attraction} successfully.`);
+    return of('SUCCESS.ADD_SCHEDULE');
   }
 }
