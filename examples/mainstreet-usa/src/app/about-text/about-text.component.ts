@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'ms-about-text',
   template: `
-    <p>
+    <p i18n="Description about text source.@@aboutText">
       Description text for attractions from <a href="https://disneyworld.disney.go.com/">https://disneyworld.disney.go.com/</a>
       and &copy; Disney, All Rights Reserved.
     </p>

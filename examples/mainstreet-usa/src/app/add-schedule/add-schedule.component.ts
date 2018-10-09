@@ -5,7 +5,11 @@ import { timer } from 'rxjs';
 @Component({
   selector: 'ms-add-schedule',
   template: `
-    <button (click)="addToSchedule()" class="btn-add-schedule">+ add to my schedule</button>
+    <button (click)="addToSchedule()"
+        class="btn-add-schedule"
+        i18n="Button to add attraction to schedule.@@addScheduleButton">
+      + add to my schedule
+    </button>
     <div class="message-box" [ngClass]="messageClass">{{message}}</div>
   `,
   styles: []
