@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="pt-br" datatype="plaintext" original="ng2.template">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="title" datatype="html">
         <source>Main Street U.S.A.</source>
+        <target>Main Street U.S.A.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.ts</context>
           <context context-type="linenumber">2</context>
@@ -12,7 +13,8 @@
         <note priority="1" from="meaning">title</note>
       </trans-unit>
       <trans-unit id="aboutLink" datatype="html">
-        <source>Sobre o texto</source>
+        <source>About Text</source>
+        <target>Sobre o texto</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.ts</context>
           <context context-type="linenumber">6</context>
@@ -20,7 +22,8 @@
         <note priority="1" from="description">Link to page about text.</note>
       </trans-unit>
       <trans-unit id="trolleyImageAlt" datatype="html">
-        <source>Veja as crianças do bonde cantando e dançando na rua.</source>
+        <source>See the trolley kids sing and dance their way down the street.</source>
+        <target>Veja as crianças do bonde cantando e dançando na rua.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/trolley/trolley.component.ts</context>
           <context context-type="linenumber">8</context>
@@ -28,9 +31,13 @@
       </trans-unit>
       <trans-unit id="trolleyText1" datatype="html">
         <source>
+          Dressed in costumes from a bygone era, 12 performers ride a trolley until it stops for them to break out in song and dance.
+          They put on show for whoever is wandering the street.
+        </source>
+        <target>
           Trajados com roupas de uma era antiga, 12 artistas chegam de bondinho e descem na parada para cantar e dançar.
           Eles fazem um show para quem estiver passeando pela rua.
-        </source>
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/trolley/trolley.component.ts</context>
           <context context-type="linenumber">11</context>
@@ -39,10 +46,15 @@
       </trans-unit>
       <trans-unit id="trolleyText2" datatype="html">
         <source>
+          Bursting with excitement, they belt out tunes such as &quot;The Most Magical Place on Earth,&quot;
+          &quot;Walkin&apos; Right Down the Middle of Main Street, U.S.A.&quot;
+          and “The Trolley Song&quot;—all seamlessly strung together and choreographed to lively dance routines.
+        </source>
+        <target>
           Com muita animação, eles cantam canções como &quot;The Most Magical Place on Earth&quot;,
           &quot;Walkin' Right Down the Middle of Main Street, U.S.A.&quot; e &quot;The Trolley Song&quot;,
           tudo em perfeita harmonia e com coreografias vibrantes.
-        </source>
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/trolley/trolley.component.ts</context>
           <context context-type="linenumber">15</context>
@@ -51,8 +63,11 @@
       </trans-unit>
       <trans-unit id="trolleyText3" datatype="html">
         <source>
-          Então, quando o bonde parar, encante-se com o show!
+          So, stop when the trolley stops and be dazzled by the show!
         </source>
+        <target>
+          Então, quando o bonde parar, encante-se com o show!
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/trolley/trolley.component.ts</context>
           <context context-type="linenumber">20</context>
@@ -60,7 +75,8 @@
         <note priority="1" from="description">Invitation to trolley show.</note>
       </trans-unit>
       <trans-unit id="dapperDansImageAlt" datatype="html">
-        <source>Aprecie os doces sons de seu canto.</source>
+        <source>Enjoy the sweet sounds of their singing.</source>
+        <target>Aprecie os doces sons de seu canto.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/dapper-dans/dapper-dans.component.ts</context>
           <context context-type="linenumber">8</context>
@@ -68,10 +84,15 @@
       </trans-unit>
       <trans-unit id="dapperDansText" datatype="html">
         <source>
+          Gather &apos;round when the Dapper Dans come to town, the finest barbershop quartet in a 2-block radius!
+          Wearing their colorful pinstriped suits, straw hats and taps, this 4-man group sings a soulful a cappella Americana and Disney tunes.
+          Add tap dancing and “pun”-forgettable vaudeville humor, and you have an act the whole family will enjoy!
+        </source>
+        <target>
           Chegue mais perto quando os Dapper Dans chegarem à cidade, o melhor quarteto que existe em um raio de dois quarteirões.
           Usando ternos com listras coloridas, chapéus de palha e sapatos de sapateado, este quarteto interpreta versões emocionantes a capella de canções tradicionais americanas e músicas da Disney.
           Adicione sapateado ao inesquecível humor vaudeville e o resultado será uma atuação que toda a família vai adorar!
-        </source>
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/dapper-dans/dapper-dans.component.ts</context>
           <context context-type="linenumber">11</context>
@@ -79,7 +100,8 @@
         <note priority="1" from="description">Description of the Dapper Dans.</note>
       </trans-unit>
       <trans-unit id="misiImageAlt" datatype="html">
-        <source>Mova-se e agite-o com Judy e Nick.</source>
+        <source>Move it and shake it with Judy and Nick.</source>
+        <target>Mova-se e agite-o com Judy e Nick.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/misi/misi.component.ts</context>
           <context context-type="linenumber">8</context>
@@ -87,8 +109,11 @@
       </trans-unit>
       <trans-unit id="misiText1" datatype="html">
         <source>
-          Atualize seus passos de dança, pegue sua câmera e prepare-se para celebrar na festa mais incrível de todos os tempos!
+          Brush up on your dance moves, grab your camera and get ready to raise the roof at the most awesome bash ever!
         </source>
+        <target>
+          Atualize seus passos de dança, pegue sua câmera e prepare-se para celebrar na festa mais incrível de todos os tempos!
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/misi/misi.component.ts</context>
           <context context-type="linenumber">11</context>
@@ -97,10 +122,15 @@
       </trans-unit>
       <trans-unit id="misiText2" datatype="html">
         <source>
+          You&apos;ll want to party it up when you see giant gift boxes circle in front of Cinderella Castle — their presence means the shindig is about to begin.
+          Use your camera to capture yourself as you bust a move in the middle of the celebration.
+          And be sure to use the tag #MoveitShakeitPics on your posts to keep the digital party going!
+        </source>
+        <target>
           Você entrará no clima da festa quando avistar caixas de presentes gigantes circulando em frente ao Cinderella Castle:
           elas indicam que o baile está prestes a começar. Use sua câmera para tirar uma foto de você mesmo dançando durante a comemoração.
           E não deixe de usar a tag #MoveitShakeitPics nos seus posts para manter a festa digital rolando!
-        </source>
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/misi/misi.component.ts</context>
           <context context-type="linenumber">14</context>
@@ -109,9 +139,13 @@
       </trans-unit>
       <trans-unit id="citizensText1" datatype="html">
         <source>
+          Make way for the horseless carriage! And say &quot;How d&apos;you do&quot; to some of the most fascinating folks you&apos;ll ever meet.
+          Smartly stylish in their early 20th-century finery, these larger-than-life small-town denizens can be spotted along Main Street throughout the day.
+        </source>
+        <target>
           Abra caminho para a carruagem motorizada! E diga &quot;Como vai você?&quot; a algumas das mais fascinantes figuras que você conhecerá na vida.
           Elegantemente vestidos em seus trajes do início do século 20, esses inesquecíveis habitantes de cidade pequena podem ser encontrados pela Main Street durante o dia todo.
-        </source>
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/citizens/citizens.component.ts</context>
           <context context-type="linenumber">8</context>
@@ -120,10 +154,15 @@
       </trans-unit>
       <trans-unit id="citizensText2" datatype="html">
         <source>
+          They&apos;re always charmed to make your acquaintance and to bend your ear with the latest local scuttlebutt.
+          You might even be treated to a rousing recital from the Main Street choir. And don&apos;t forget your new-fangled camera.
+          These Citizens will be &quot;pleased as punch&quot; to pose for pictures.
+        </source>
+        <target>
           Eles estão sempre informando quais são as últimas fofocas locais, e adoram essa função!
           Você pode até ser surpreendido por uma emocionante apresentação do coro da Main Street.
           E não se esqueça de deixar sua câmera a postos. Eles simplesmente adoram posar para fotos!
-        </source>
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/citizens/citizens.component.ts</context>
           <context context-type="linenumber">12</context>
@@ -131,7 +170,8 @@
         <note priority="1" from="description">Description about meeting citizens of main street.</note>
       </trans-unit>
       <trans-unit id="backLink" datatype="html">
-        <source>&lt; Volte</source>
+        <source>&lt; Back</source>
+        <target>&lt; Volte</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/menu/menu.component.ts</context>
           <context context-type="linenumber">3</context>
@@ -140,10 +180,15 @@
       </trans-unit>
       <trans-unit id="intro" datatype="html">
         <source>
+          Welcome to Main Street U.S.A. in the Magic Kingdom!
+          There is so much to see and do here, so use this guide to get you started.
+          Select one of the above items to read more about what Main Street has to offer.
+        </source>
+        <target>
           Bem-vindo à Main Street USA no Magic Kingdom!
           Há muito para ver e fazer aqui, então use este guia para você começar.
           Selecione um dos itens acima para ler mais sobre o que a Main Street tem a oferecer.
-        </source>
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/intro/intro.component.ts</context>
           <context context-type="linenumber">2</context>
@@ -151,14 +196,16 @@
         <note priority="1" from="description">Introduction paragraph.</note>
       </trans-unit>
       <trans-unit id="introImageAlt" datatype="html">
-        <source>Ao virar da esquina é uma Fantasyland.</source>
+        <source>Just around the corner is a Fantasyland.</source>
+        <target>Ao virar da esquina é uma Fantasyland.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/intro/intro.component.ts</context>
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="mrffImageAlt" datatype="html">
-        <source>Veja todos os seus amigos cantarem, dançarem e deixarem ir.</source>
+        <source>See all your friends sing, dance, and let it go.</source>
+        <target>Veja todos os seus amigos cantarem, dançarem e deixarem ir.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/mrff/mrff.component.ts</context>
           <context context-type="linenumber">8</context>
@@ -166,8 +213,11 @@
       </trans-unit>
       <trans-unit id="mrffText1" datatype="html">
         <source>
-          Nesse verão nos EUA, vá cantando &quot;skip-a-dee-doo-dah&quot; até o palco em frente ao Cinderella Castle para a festa mais animada de todas!
+          This summer, skip-a-dee-doo-dah to the Cinderella Castle Forecourt stage for the fairest faire of them all!
         </source>
+        <target>
+          Nesse verão nos EUA, vá cantando &quot;skip-a-dee-doo-dah&quot; até o palco em frente ao Cinderella Castle para a festa mais animada de todas!
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/mrff/mrff.component.ts</context>
           <context context-type="linenumber">11</context>
@@ -176,10 +226,15 @@
       </trans-unit>
       <trans-unit id="mrffText2" datatype="html">
         <source>
+          It takes a whole enchanted kingdom to put on this all-new, live stage show at Magic Kingdom park—and you’re cordially invited!
+          In preparation for this joyous festival, Mickey and friends have ventured far and wide to gather Disney pals from all
+          over to star in a royal friendship faire.
+        </source>
+        <target>
           Todo o reino encantado foi mobilizado para apresentar esta nova apresentação ao vivo no palco do Magic Kingdom Park, e você está cordialmente convidado!
           Durante os preparativos para este alegre festival, Mickey e seus amigos viajaram para terras bem distantes
           em busca de companheiros de todos os lugares para serem as estrelas desta verdadeira celebração da amizade.
-        </source>
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/mrff/mrff.component.ts</context>
           <context context-type="linenumber">14</context>
@@ -188,11 +243,17 @@
       </trans-unit>
       <trans-unit id="mrffText3" datatype="html">
         <source>
+          Goofy has invited Tiana and friends from the Land of the Bewitching Bayous to infuse a little spice of New Orleans jazz in the party.
+          Donald Duck brings some new friends he met at the Snuggly Duckling from the Land of Enchanted Woods to shake their tail feathers.
+          Daisy has asked Rapunzel and Flynn to “comb” over and sing along.
+          Mickey even recruited Olaf, Anna and Elsa from the Land of the Mystic Mountains to cast some extra cool touches!
+        </source>
+        <target>
           O Goofy convidou Tiana e seus amigos da Terra dos Bayous Encantadores Enfeitiçados para adicionar uma pitada do jazz de Nova Orleans à festa.
           O Donald Duck trouxe novos amigos que encontrou no Snuggly Duckling, na Land of Enchanted Woods, para chacoalhar as penas.
           A Daisy chamou Rapunzel e Flynn para virem pentear, que dizer, cantar juntos.
           O Mickey chamou até o Olaf, a Anna e a Elsa da Land of the Mystic Mountains para incluir uns toques refrescantes!
-        </source>
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/mrff/mrff.component.ts</context>
           <context context-type="linenumber">19</context>
@@ -201,9 +262,13 @@
       </trans-unit>
       <trans-unit id="mrffText4" datatype="html">
         <source>
+          This grand affair culminates in the joining of classic and contemporary Disney Characters in a spectacular show
+          featuring lively dancing, dazzling effects, an original song and memorable music from The Princess and the Frog, Tangled and Frozen.
+        </source>
+        <target>
           Esta grande festa culmina com a união de vários Personagens Disney, clássicos e atuais, em um show espetacular com danças ao vivo,
           efeitos fascinantes, uma música original e as canções de A Princesa e o Sapo, Enrolados e Frozen - Uma Aventura Congelante.
-        </source>
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/attr/mrff/mrff.component.ts</context>
           <context context-type="linenumber">25</context>
@@ -212,8 +277,11 @@
       </trans-unit>
       <trans-unit id="addScheduleButton" datatype="html">
         <source>
-          + adicionar ao meu horário
+          + add to my schedule
         </source>
+        <target>
+          + adicionar ao meu horário
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/add-schedule/add-schedule.component.ts</context>
           <context context-type="linenumber">4</context>
@@ -222,8 +290,11 @@
       </trans-unit>
       <trans-unit id="addError" datatype="html">
         <source>
-          Erro ao adicionar ao agendamento.
+          Error adding to schedule.
         </source>
+        <target>
+          Erro ao adicionar ao agendamento.
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/add-schedule/add-schedule.component.ts</context>
           <context context-type="linenumber">9</context>
@@ -232,8 +303,11 @@
       </trans-unit>
       <trans-unit id="addSuccess" datatype="html">
         <source>
-          Adicionado com sucesso para agendar.
+          Added successfully to schedule.
         </source>
+        <target>
+          Adicionado com sucesso para agendar.
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/add-schedule/add-schedule.component.ts</context>
           <context context-type="linenumber">14</context>
@@ -242,9 +316,13 @@
       </trans-unit>
       <trans-unit id="aboutText" datatype="html">
         <source>
+          Description text for attractions from <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>https://disneyworld.disney.go.com/<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+          and © Disney, All Rights Reserved.
+        </source>
+        <target>
           Texto de descrição para atrações de <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>https://disneyworld.disney.go.com/<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
           © Disney, odos os direitos reservados. Texto alternativo de imagem e outras traduções concluídas com o Google Tradutor.
-        </source>
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/about-text/about-text.component.ts</context>
           <context context-type="linenumber">2</context>
