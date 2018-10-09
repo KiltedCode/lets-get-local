@@ -3,11 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { CitizensComponent, DapperDansComponent, MisiComponent, MrffComponent, TrolleyComponent } from './attr';
 import { IntroComponent } from './intro/intro.component';
+import { AboutTextComponent } from './about-text/about-text.component';
 
 const routes: Routes = [
   {
     path: '',
     component: IntroComponent
+  },
+  {
+    path: 'about',
+    component: AboutTextComponent
   },
   {
     path: 'attraction',

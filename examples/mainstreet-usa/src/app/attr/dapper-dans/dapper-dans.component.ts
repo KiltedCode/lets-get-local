@@ -10,8 +10,9 @@ import { Component, OnInit } from '@angular/core';
     <img src="./assets/dapper.jpg" class="attraction-img" alt="Enjoy the sweet sounds of their singing." />
   </p>
   <p>
-    See this classic barbershop quartet sing, tap, play the chimes, dance, and even provide a little humor all to entertain you.
-    Hear their renditions of a cappella Americana and Disney tunes for the whole family.
+    Gather 'round when the Dapper Dans come to town, the finest barbershop quartet in a 2-block radius!
+    Wearing their colorful pinstriped suits, straw hats and taps, this 4-man group sings a soulful a cappella Americana and Disney tunes.
+    Add tap dancing and “pun”-forgettable vaudeville humor, and you have an act the whole family will enjoy!
   </p>
   <ms-add-schedule [attraction]="name"></ms-add-schedule>
   `,

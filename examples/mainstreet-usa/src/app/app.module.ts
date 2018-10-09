@@ -13,6 +13,7 @@ import { IntroComponent } from './intro/intro.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MrffComponent } from './attr/mrff/mrff.component';
 import { AddScheduleComponent } from './add-schedule/add-schedule.component';
+import { AboutTextComponent } from './about-text/about-text.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AddScheduleComponent } from './add-schedule/add-schedule.component';
     MenuComponent,
     IntroComponent,
     MrffComponent,
-    AddScheduleComponent
+    AddScheduleComponent,
+    AboutTextComponent
   ],
   imports: [
     AppRoutingModule,
