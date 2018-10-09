@@ -18,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
   <p i18n="Description of street party.@@misiText2">
     You'll want to party it up when you see giant gift boxes circle in front of Cinderella Castle — their presence means the shindig is about to begin.
     Use your camera to capture yourself as you bust a move in the middle of the celebration.
-    nd be sure to use the tag #MoveitShakeitPics on your posts to keep the digital party going!
+    And be sure to use the tag #MoveitShakeitPics on your posts to keep the digital party going!
   </p>
   <ms-add-schedule [attraction]="name"></ms-add-schedule>
   `,
