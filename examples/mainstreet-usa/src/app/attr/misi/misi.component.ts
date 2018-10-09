@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
     {{name}}
   </h2>
   <p class="centered">
-    <img src="./assets/misi.jpg" class="attraction-img" alt="Move it and shake it with Judy and Nick." />
+    <img src="./assets/misi.jpg"
+        class="attraction-img"
+        alt="Move it and shake it with Judy and Nick."
+        i18n-alt="@@misiImageAlt" />
   </p>
   <p i18n="Intro to street party.@@misiText1">
     Brush up on your dance moves, grab your camera and get ready to raise the roof at the most awesome bash ever!

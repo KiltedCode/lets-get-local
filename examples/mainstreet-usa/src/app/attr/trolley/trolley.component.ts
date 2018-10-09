@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
       {{name}}
     </h2>
     <p class="centered">
-      <img src="./assets/trolley.jpg" class="attraction-img" alt="See the trolley kids sing and dance their way down the street." />
+      <img src="./assets/trolley.jpg"
+          class="attraction-img"
+          alt="See the trolley kids sing and dance their way down the street."
+          i18n-alt="@@trolleyImageAlt" />
     </p>
     <p i18n="Description of trolley show.@@trolleyText1">
       Dressed in costumes from a bygone era, 12 performers ride a trolley until it stops for them to break out in song and dance.

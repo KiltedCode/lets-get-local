@@ -23,7 +23,7 @@ export class MenuComponent implements OnInit {
   constructor(
     private router: Router
   ) {
-    router.events.subscribe(event => {
+    this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd ) {
         this.attraction = event.url.startsWith('/attraction');
       }

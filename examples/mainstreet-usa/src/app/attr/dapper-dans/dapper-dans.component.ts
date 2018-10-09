@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
     {{name}}
   </h2>
   <p class="centered">
-    <img src="./assets/dapper.jpg" class="attraction-img" alt="Enjoy the sweet sounds of their singing." />
+    <img src="./assets/dapper.jpg"
+        class="attraction-img"
+        alt="Enjoy the sweet sounds of their singing."
+        i18n-alt="@@dapperDansImageAlt" />
   </p>
   <p i18n="Description of the Dapper Dans.@@dapperDansText">
     Gather 'round when the Dapper Dans come to town, the finest barbershop quartet in a 2-block radius!

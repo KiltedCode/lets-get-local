@@ -9,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
       Select one of the above items to read more about what Main Street has to offer.
     </p>
     <p class="centere">
-      <img src="./assets/main-street.jpg" class="attraction-img" alt="Just around the corner is a Fantasyland." />
+      <img src="./assets/main-street.jpg"
+          class="attraction-img"
+          alt="Just around the corner is a Fantasyland."
+          i18n-alt="@@introImageAlt" />
     </p>
   `,
   styles: []

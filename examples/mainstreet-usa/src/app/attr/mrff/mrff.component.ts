@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
       {{name}}
     </h2>
     <p class="centered">
-      <img src="./assets/mrff.jpg" class="attraction-img" alt="See all your friends sing, dance, and let it go." />
+      <img src="./assets/mrff.jpg"
+          class="attraction-img"
+          alt="See all your friends sing, dance, and let it go."
+          i18n-alt="@@mrffImageAlt" />
     </p>
     <p i18n="Intro about stage show.@@mrffText1">
       This summer, skip-a-dee-doo-dah to the Cinderella Castle Forecourt stage for the fairest faire of them all!
