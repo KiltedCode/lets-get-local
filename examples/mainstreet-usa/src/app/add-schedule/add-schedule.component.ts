@@ -10,7 +10,16 @@ import { timer } from 'rxjs';
         i18n="Button to add attraction to schedule.@@addScheduleButton">
       + add to my schedule
     </button>
-    <div class="message-box" [ngClass]="messageClass">{{message}}</div>
+    <div class="message-box error-message"
+        [ngClass]="{'expanded': showErrorMessage}"
+        i18n="Message when error adding to schedule.@@addError">
+          Error adding to schedule.
+    </div>
+    <div class="message-box success-message"
+        [ngClass]="{'expanded': showSuccessMessage}"
+        i18n="Message when successfully adding to schedule.@@addSuccess">
+          Added successfully to schedule.
+    </div>
   `,
   styles: []
 })
@@ -18,56 +27,49 @@ export class AddScheduleComponent implements OnInit {
 
   @Input() attraction: string;
 
-  message: string;
-  messageClass: string;
-
-  private messageTypeClass: string;
+  showErrorMessage: boolean;
+  showSuccessMessage: boolean;
 
   constructor(
     private personalizeService: PersonalizeService
   ) { }
 
   ngOnInit() {
-    this.message = '';
-    this.messageClass = '';
-    this.messageTypeClass = '';
+    this.resetShows();
   }
 
   addToSchedule(): void {
     this.personalizeService.addAttraction(this.attraction)
         .subscribe(
           (msg: string) => {
-            this.showMessage(msg, 'SUCCESS');
+            this.showMessage('SUCCESS');
           },
           error => {
-            this.showMessage(error.msg, 'ERROR');
+            this.showMessage('ERROR');
           }
         );
   }
 
   collapseMessage(): void {
-    this.messageClass = this.messageTypeClass;
-    timer(1100).subscribe(() => this.hideMessage());
+    this.resetShows();
   }
 
-  hideMessage(): void {
-    this.message = '';
-    this.messageClass = '';
+  resetShows(): void {
+    this.showErrorMessage = false;
+    this.showSuccessMessage = false;
   }
 
-  showMessage(msg: string, type: string): void {
-    this.message = msg;
+  showMessage(type: string): void {
     switch (type) {
       case 'ERROR':
-        this.messageTypeClass = 'error-message';
+        this.showErrorMessage = true;
         break;
       case 'SUCCESS':
-        this.messageTypeClass = 'success-message';
+        this.showSuccessMessage = true;
         break;
       default:
-        this.messageTypeClass = 'default-message';
+        break;
     }
-    this.messageClass = 'expanded ' + this.messageTypeClass;
 
     timer(4000).subscribe(() => this.collapseMessage());
   }

@@ -9,20 +9,19 @@
 
 .message-box {
   border-radius: 10px;
+  opacity: 0;
   font-size: 12px;
   margin-bottom: 5px;
-  max-height: 0;
-  overflow: hidden;
   padding: 10px 20px;
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 10px;
-  transition: max-height 1s ease-out;
+  transition: opacity .5s ease-out;
   width: 250px;
 
   &.expanded {
-    max-height: 250px;
-    transition: max-height 1s ease-in;
+    opacity: 1;
+    transition: opacity .5s ease-in;
   }
 
   &.error-message {
