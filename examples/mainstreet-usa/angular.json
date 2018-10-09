@@ -69,6 +69,49 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "en": {
+              "aot": true,
+              "outputPath": "dist/main-street-en/",
+              "i18nFile": "src/locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ed",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            },
+            "pt-br": {
+              "aot": true,
+              "outputPath": "dist/main-street-pt-br/",
+              "baseHref": "/pt-br/",
+              "i18nFile": "src/locale/messages.pt-br.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "pt-br",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
             }
           }
         },
@@ -80,6 +123,12 @@
           "configurations": {
             "production": {
               "browserTarget": "mainstreet-usa:build:production"
+            },
+            "en": {
+              "browserTarget": "mainstreet-usa:build:en"
+            },
+            "pt-br": {
+              "browserTarget": "mainstreet-usa:build:pt-br"
             }
           }
         },
