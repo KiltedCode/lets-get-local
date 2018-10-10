@@ -1,0 +1,738 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Let's Get Local</title>
+
+		<link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="node_modules/reveal.js/css/theme/league.css">
+		<link rel="stylesheet" href="styles.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="node_modules/reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'node_modules/reveal.js/css/print/pdf.css' : 'node_modules/reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+                <section id="title" data-background="/assets/img/captain-angular-bg.png">
+                    <div class="bg-img">
+                        <h1 class="bg-img">Let's Get Local</h1>
+                        <h2>Angular Localization</h2>
+                        <p class="">
+                            John Niedzwiecki<br />
+                            @kiltedcode
+                        </p>
+                    </div>
+                </section>
+
+                <section id="about-me">
+                    <h2>About the Geek</h2>
+                    <pre class="small-code"><code>function getDeveloperInfo() {
+    const dev = {
+        name: 'John Niedzwiecki',
+        desc: 'Your friendly neighborhood kilted coder.',
+        company: 'Disney Streaming Services',
+        role: 'Senior Software Engineer',
+        twitter: '@kiltedcode',
+        github: 'kiltedcode',
+        web: 'https://kiltedcode.github.io',
+        email: 'john.niedzwiecki.ii@gmail.com',
+        currentDevLoves: ['Angular', 'JavaScript Everywhere', 'NativeScript', 'CSS fun'],
+        nonDevAttr : {
+            isHusband: true,
+            isFather: true,
+            hobbies: ['running', 'disney', 'cooking', 'video games', 'photography'],
+            twitter: '@itshighlandjohn',
+            web: 'http://www.rungeekrundisney.com'
+        }
+    };
+    return dev;
+}</code></pre>
+                </section>
+                <section id="abstract">
+                    <section id="abstract-everywhere">
+                        <h1>Users are everywhere</h1>
+                    </section>
+
+                    <section id="abstract-happens">
+                        <h2>Users are everywhere</h2>
+                        <p>
+                            Users - and potential users - of your application are everywhere.
+                            If we want to truly connect with these users you're going to need to add application support.
+                        </p>
+                        <aside class="notes">
+                            Users - and potential users - of your application are everywhere.
+                            If you've ever learned a second language, you in know doubt feel more comfortable in your first.
+                            If you've traveled abroad, your probably also feel much more comfortable in a language you understand.
+                            If we want to truly connect with these users you're going to need to add application support.
+                        </aside>
+                    </section>
+                </section>  
+
+                <section id="outline">
+                    <section id="outline-list">
+                        <h2>Angular Options</h2>
+                        <ul>
+                            <li>Angular Internationalization (core)</li>
+                            <li>i18n pipes</li>
+                            <li>Template translations</li>
+                            <li>ngx-translate</li>
+                            <li>Pros and cons</li>
+                        </ul>
+                    </section>
+                </section>
+                
+                <section id="topic-angular-internationalization">
+                    <section id="angular-i18n-title">
+                        <h1 class="section-title">Angular Internationalization</h1>
+                    </section>
+
+                    <section id="angular-i18n">
+                        <h2>Angular Internationalization</h2>
+                        <p>
+                            Angular team provides their own tools to help you with internationalization of your app.
+                        </p>
+                        <p class="fragment">
+                            <em>Internationalization</em> is the process of designing and preparing your app to be usable in different languages.
+                        </p>
+                        <p class="fragment">
+                            <em>Localization</em> is the process of translating your internationalized app into specific languages for particular locales.
+                        </p>
+                        <p class="text-right">
+                            <a href="https://angular.io/guide/i18n"><small>https://angular.io/guide/i18n</small></a>
+                        </p>
+                    </section>
+
+                    <section id="angular-i18n-abilities">
+                        <h2>Angular and i18n</h2>
+                        <p>
+                            Offer various abilities to help with internationalization
+                        </p>
+                        <ul>
+                            <li>Display dates, currencies, number, and percentages  locally.</li>
+                            <li>Plural forms in templating</li>
+                            <li><em>Preparing text in templates for translation.</em></li>
+                        </ul>
+                    </section>
+
+                    <section id="angular-i18n-serve">
+                        <h2>Setting up locale of your app</h2>
+                        <p>
+                            Need to identify your <em>locale</em> for localized value. Identifies a language and optionally a country.
+                            For example <span class="inline-code">en</span> for English vs <span class="inline-code">en-GB</span> for English (United Kingdom)
+                        </p>
+<pre><code class="shell" data-trim>
+ng serve --configuration=pt
+</code></pre>
+                    </section>
+
+                    <section id="angular-i18n-locale">
+                            <h2>Setting up locale of your app</h2>
+                            <p>
+                                For Angular pipes, you need to load locale data for any locale you want to support other than <span class="inline-code">en-US</span>
+                            </p>
+<pre><code class="groovy" data-trim>
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
+
+registerLocaleData(localePt, 'pt');
+</code></pre>
+                            <p>
+                                <small>Examples: <span class="inline-code">DatePipe</span>, <span class="inline-code">CurrencyPipe</span>, 
+                                <span class="inline-code">DecimalPipe</span>, and <span class="inline-code">PercentPipe</span></small>
+                            </p>
+                        </section>
+
+                </section>
+                
+                <section id="topic-template-translation">
+                    <section id="template-translation-title">
+                        <h1 class="section-title">Template Translations</h1>
+                    </section>
+
+                    <section id="template-translation-steps">
+                        <h2>Steps to Template Translation</h2>
+                        <ul>
+                            <li>Mark text in templates for translation</li>
+                            <li>Create translation file</li>
+                            <li>Edit and translate translation file</li>
+                            <li>Build translated application</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="template-translation-mark">
+                        <h2>Example Application</h2>
+                        <p>
+                            Created a very simple application to demonstrate our Angular translation options.
+                        </p>
+                        <p>
+                            Repository is <a href="https://github.com/KiltedCode/lets-get-local">lets-get-local</a>.
+                            Branches available for our our different options.
+                        </p>
+                        <p>
+                            For this section you'll want the branch <a href="https://github.com/KiltedCode/lets-get-local/tree/angular-internationalization">angular-internationalization</a>.
+                        </p>
+                        <p class="text-right">
+                            <a href="https://github.com/KiltedCode/lets-get-local"><small>https://github.com/KiltedCode/lets-get-local</small></a>
+                        </p>
+                    </section>
+                    
+                    <section id="template-translation-mark">
+                        <h2>Mark Static Text</h2>
+                        <p>
+                            Mark text for translation in the component templates with the <span class="inline-code">i18n</span> attribute.
+                            It is a custom attribute that compiler will recognize and remove.
+                        </p>
+                        <aside class="notes">
+                            Key here is mark "static" text.
+                            Not a directive.
+                        </aside>
+                    </section>
+                    
+                    <section id="template-translation-context">
+                        <h2>Give Context to Text</h2>
+                        <p>
+                            In addition to marking the text, we can provide additional valuable information for translating.
+                            We can provide a description and a meaning.
+                        </p>
+<pre><code class="html" data-trim>
+<a routerLink="/" i18n="back link|Link to go back to main page.">
+    Back
+</a>
+</code></pre>           
+                        <aside class="notes">
+                            In order to give a translator context to file we eventually give them to translate.
+                        </aside>
+                    </section>
+
+                    <section id="template-translation-context">
+                        <h2>Persistant ID</h2>
+                        <p>
+                            When your data is extracted to a translation file, it gets a unique ID.
+                            When you change the text, the tool would generate a new ID.
+                            You can instead set the ID with <span class="inline-code">@@yourId</span>
+                        </p>
+    <pre><code class="html" data-trim>
+    <h1 i18n="title|Main title of application.@@title">
+        Main Street U.S.A.
+    </h1>
+    </code></pre>           
+                        <aside class="notes">
+                            Could be worthwhile because you can ensure translations are new or would be unavailable.
+                            Must all be unique or will overwrite during compilation
+                        </aside>
+                    </section>
+
+                    <section id="template-translation-attributes">
+                        <h2>Translating Attributes</h2>
+                        <p>
+                            In HTML, some attributes provide valuable context through text.
+                            You can mark attribute for translation with <span class="inline-code">i18n-x</span>
+                        </p>
+<pre><code class="html" data-trim>
+<img src="./assets/misi.jpg"
+    alt="Move it and shake it with Judy and Nick."
+    i18n-alt="@@misiImageAlt" />
+</code></pre>           
+                        <aside class="notes">
+                            Could be worthwhile because you can ensure translations are new or would be unavailable.
+                            Must all be unique or will overwrite during compilation
+                        </aside>
+                    </section>
+
+                    <section id="template-translation-more">
+                        <h2>Translate More</h2>
+                        <p>
+                            If you want to take advantage of pluralization (cardinality) or 
+                            if you need select among different text based on a variable
+                            both are supported through ICU Messages.
+                        </p>         
+                        <aside class="notes">
+                                International Components for Unicode
+                        </aside>
+                    </section>
+
+                    <section id="template-translation-more-ex">
+                        <h2>Translating More</h2>
+
+<pre><code class="html" data-trim>
+<span i18n="@@icuMessage">
+    Table for {guests, plural,
+        =1 {one}
+        =2 {two}
+        =3 {three}
+        =4 {four}
+        other {a large party}
+    }
+    for {time, select, 
+        morning {breakfast} 
+        lateMorning {brunch} 
+        midDay {lunch} 
+        evening {dinner} 
+        other {food}
+    }
+</span>
+</code></pre>  
+                    </section>
+
+                    <section id="template-translation-create">
+                        <h2>Create Translation File</h2>
+                        <p>
+                            Next we extract all of the marked text and create a starting source file for translations.
+                            We'll do this with the help of the Angular CLI.
+                        </p>
+<pre><code class="shell" data-trim>
+ng xi18n --output-path locale --i18n-format=xlf
+</code></pre>       
+                        <aside class="notes">
+                            Source options XLIFF 1.2, XLIFF 2, and XML MessageBundle
+                            Can also specify the default locale of application
+                        </aside>
+                    </section>
+
+                    <section id="template-translation-more">
+                        <h2>messages.xlf</h2>
+<pre><code class="xml" data-trim>
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="ng2.template">
+    &lt;body>
+        <trans-unit id="title" datatype="html">
+        <source>Main Street U.S.A.&lt;/source>
+        <context-group purpose="location">
+            <context context-type="sourcefile">app/home/home.component.ts</context>
+            <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Main title of application.</note>
+        <note priority="1" from="meaning">title</note>
+        </trans-unit>
+        ....
+        <trans-unit id="trolleyImageAlt" datatype="html">
+        <source>See the trolley kids sing and dance their way down the street.&lt;/source>
+        <context-group purpose="location">
+            <context context-type="sourcefile">app/attr/trolley/trolley.component.ts</context>
+            <context context-type="linenumber">8</context>
+        </context-group>
+        </trans-unit>
+    &lt;/body>
+    </file>
+</xliff>        
+</code></pre>
+                    </section>
+
+                    <section id="template-translation-translate-all">
+                        <h2>Translate All the Things!</h2>
+                        <p>
+                            You need to take this created file and make your translation files.
+                            Easiest to start with this and create your initial language source file -
+                            in our case english.
+                        </p>
+                        <ul>
+                            <li>Rename as <span class="inline-code">messages.en.xlf</span></li>
+                            <li>Add a <span class="inline-code">&lt;target&gt;</span> for every <span class="inline-code">&lt;source&gt;</span></li>
+                            <li>
+                                Profit! <br />
+                                (just kidding, there's more work to do)
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                            Yes, you need one for the starting languages.
+                        </aside>
+                    </section>
+
+                    <section id="template-translation-lather">
+                        <h2>Lather, Rinse, Repeat</h2>
+                        <p>
+                            <span class="inline-code">messages.pr-br.xlf</span>
+                        </p>
+<pre><code class="xml" data-trim>
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="ng2.template">
+    &lt;body>
+        <trans-unit id="title" datatype="html">
+            <source>Main Street U.S.A.&lt;/source>
+            <target>Main Street U.S.A</target>
+            <context-group purpose="location">
+                <context context-type="sourcefile">app/home/home.component.ts</context>
+                <context context-type="linenumber">2</context>
+            </context-group>
+            <note priority="1" from="description">Main title of application.</note>
+            <note priority="1" from="meaning">title</note>
+        </trans-unit>
+        ...
+        <trans-unit id="trolleyImageAlt" datatype="html">
+            <source>See the trolley kids sing and dance their way down the street.&lt;/source>
+            <target>Veja as crianças do bonde cantando e dançando na rua.</target>
+            <context-group purpose="location">
+                <context context-type="sourcefile">app/attr/trolley/trolley.component.ts</context>
+                <context context-type="linenumber">8</context>
+            </context-group>
+        </trans-unit>
+    &lt;/body>
+    </file>
+</xliff>        
+</code></pre>
+                        <aside class="notes">
+                            This is where the industry standard and descriptions allow you to send it off to a service.
+                        </aside>
+                    </section>
+
+                    <section id="template-translation-build">
+                        <h2>Build with Translation Files</h2>
+                        <p>
+                            You need to update your build to let the compiler know about your files and format.
+                        </p>         
+                        <aside class="notes">
+                            Differs for AOT and JIT
+                        </aside>
+                    </section>
+
+                    <section id="template-translation-build-code">
+                        <h2>AOT Translation Build</h2>
+<pre><code class="json" data-trim>
+"build": {
+    ...
+    "configurations": {
+        ...
+        "pt-br": {
+            "aot": true,
+            "outputPath": "dist/main-street-pt-br/",
+            "baseHref": "/pt-br/",
+            "i18nFile": "src/locale/messages.pt-br.xlf",
+            "i18nFormat": "xlf",
+            "i18nLocale": "pt-br",
+            ...
+            // rest of build configurations
+            "buildOptimizer": true
+        }
+    }
+}
+</code></pre>
+                        <aside class="notes">
+                            angular.json
+                            note baseHref, good for multiple locales
+                        </aside>
+                    </section>
+
+                    <section id="template-translation-serve">
+                        <h2>AOT Translation Serve</h2>
+<pre><code class="json" data-trim>
+"serve": {
+    ...
+    "configurations": {
+        ...
+        "pt-br": {
+            "browserTarget": "mainstreet-usa:build:pt-br"
+        }
+    }
+}
+</code></pre>
+                        <aside class="notes">
+                            angular.json
+                        </aside>
+                    </section>
+
+                    <section id="template-translation-cli">
+                        <h2>Or you can pass to CLI</h2>
+<pre><code class="shell" data-trim>
+ng build --prod --i18n-file src/locale/messages.pt-br.xlf --i18n-format xlf --i18n-locale pt-br
+</code></pre>
+                        <aside class="notes">
+                            angular.json
+                        </aside>
+                    </section>
+
+                </section>
+                
+                <section id="topic-ngx-translate">
+                    <section id="ngx-translate-title">
+                        <h1 class="section-title">ngx-translate</h1>
+                    </section>
+
+                    <section id="ngx-translate">
+                        <h2>ngx-translate</h2>
+                        <p>
+                            NGX-Translate is an internationalization library for Angular,
+                            allowing you to define and switch between languages easily.
+                        </p>
+                    </section>
+
+                    <section id="ngx-translate-steps">
+                        <h2>Steps to ngx-translate</h2>
+                        <ul>
+                            <li>Import and Configure</li>
+                            <li>Initialize the Service</li>
+                            <li>Define the translations</li>
+                            <li>Integrate with the service, pipe, or directive</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="ngx-translate-install">
+                        <h2>Install Core</h2>
+                        <p>
+                            Start by installing the core library. Additionally you'll need a loader for your translations files.
+                        </p>
+<pre><code class="shell" data-trim>
+npm install @ngx-translate/core --save
+npm install @ngx-translate/http-loader --save
+</code></pre>
+                        <aside class="notes">
+                            Http Loader: load json translation files with http
+                            Angular Universal Loader: load json translation files with fs instead of http
+                            Po Loader: load .po files with http
+                        </aside>
+                    </section>
+                    
+                    <section id="ngx-translate-configure">
+                        <h2>Import and Configure</h2>
+                        <p>
+                            Import <span class="inline-code">TranslateModule</span> &amp; configure with loader.
+                        </p>
+<pre><code class="groovy" data-trim>
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http, './assets/locale/', '.json');
+}
+
+@NgModule({
+    imports: [
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        })
+    ],
+    bootstrap: [ HomeComponent ]
+})
+export class AppModule { }
+</code></pre>
+                        <aside class="notes">
+                            AoT requires an exported function for factories
+                        </aside>
+                    </section>
+
+                    <section id="ngx-translate-initialize">
+                        <h2>Initialize the TranslateService</h2>
+                        <p>
+                            Import <span class="inline-code">TranslateModule</span> &amp; configure with loader.
+                        </p>
+<pre><code class="groovy" data-trim>
+export class HomeComponent {
+    constructor( translate: TranslateService ) {
+        translate.setDefaultLang('en');
+        translate.addLangs(['en', 'pt']);
+    
+        const browserLang = translate.getBrowserLang();
+        translate.use(browserLang);
+    }
+}
+</code></pre>
+                        <aside class="notes">
+                            AoT requires an exported function for factories
+                        </aside>
+                    </section>
+
+                    <section id="ngx-translate-file-en">
+                        <h2>Define the Translations</h2>
+                        <p>
+                            Create a json file per language: en.json
+                        </p>
+<pre><code class="json" data-trim>
+{
+    "ABOUT": {
+        "LINK_TEXT": "About Text",
+        "TEXT": "Description text for attractions from <a href="https://disneyworld.disney.go.com">https://disneyworld.disney.go.com/</a> and &copy; Disney, All Rights Reserved. Alternative image text and other translations completed with Google Translate."
+    },
+    ...
+    "SUCCESS": {
+        "ADD_SCHEDULE": "Added {{attraction}} successfully to schedule."
+    }
+}
+</code></pre>
+                        <aside class="notes">
+                            Can also manually define with setTranslation
+                        </aside>
+                    </section>
+
+                    <section id="ngx-translate-file-pt">
+                        <h2>Define the Translations</h2>
+                        <p>
+                            Create a json file per language: pt.json
+                        </p>
+<pre><code class="json" data-trim>
+{
+    "ABOUT": {
+        "LINK_TEXT": "Sobre o texto",
+        "TEXT": "Texto de descrição para atrações de <a href="https://disneyworld.disney.go.com">https://disneyworld.disney.go.com/</a> &copy; Disney, odos os direitos reservados. Texto alternativo de imagem e outras traduções concluídas com o Google Tradutor."
+    },
+    ...
+    "SUCCESS": {
+        "ADD_SCHEDULE": "Adicionado \"{{attraction}}\" com sucesso para agendar."
+    }
+}
+</code></pre>
+                        <aside class="notes">
+                            Can also manually define with setTranslation
+                        </aside>
+                    </section>
+
+                    <section id="ngx-translate-directive">
+                        <h2>Use the directive</h2>
+                        <p>
+                            Use the directive with HTML tags. You can also pass in translations with HTML
+                        </p>
+<pre><code class="html" data-trim>
+<a routerLink="/about"
+    [translate]="'ABOUT.LINK_TEXT'">
+    About Text
+</a>
+<p [innerHTML]="'ABOUT.TEXT' | translate"></p>
+</code></pre>
+                    </section>
+
+                    <section id="ngx-translate-pipe">
+                        <h2>Use the pipe</h2>
+                        <p>
+                            Use the pipe when interpolating a variable
+                        </p>
+<pre><code class="html" data-trim>
+this.buttonText = 'ADD_SCHEDULE.BTN_TEXT';
+
+<button (click)="addToSchedule()">
+    {{ buttonText | translate }}
+</button>
+</code></pre>
+                    </section>
+                    
+                    <section id="ngx-translate-pipe">
+                        <h2>Use the service</h2>
+                        <p>
+                            Use the service to translate in your component code
+                        </p>
+<pre><code class="groovy" data-trim>
+this.translate.get(successMsg, {attraction: attraction})
+    .subscribe(
+        (res: string) => {
+            this.message = res;
+        }
+    );
+this.error = this.translate.instant(errorMsg);
+</code></pre>
+                        <aside class="notes">
+                            Good for values returned from a backend.
+                            Note instant is synchronous, loading translations is asynchronous
+                        </aside>
+                    </section>
+
+                </section>
+                
+                <section id="topic-pros-cons">
+                    <section id="compare-title">
+                        <h1 class="section-title">Comparing the Methods</h1>
+                    </section>
+
+                    <section id="compare-ng-pros">
+                        <h2>Angular Internationalization: Pros</h2>
+                        <ul>
+                            <li>Compiled templates instead of waiting for loading and interpreting</li>
+                            <li>Can provide directory based language solutions</li>
+                            <li>Industry standard formats</li>
+                            <li>Meaning and context defined for translators</li>
+                        </ul>
+                    </section>
+
+                    <section id="compare-ng-cons">
+                        <h2>Angular Internationalization: Cons</h2>
+                        <ul>
+                            <li>Not translating in service</li>
+                            <li>No way to dynamically translate data from back end</li>
+                            <li>More complex file format</li>
+                            <li>Requires multiple compiled sources</li>
+                        </ul>
+                    </section>
+
+                    <section id="compare-ngx-pros">
+                        <h2>NGX-Translate: Pros</h2>
+                        <ul>
+                            <li>Dynamic translations at anytime via 3 methods</li>
+                            <li>Easily switch on the fly</li>
+                            <li>Easy to use file format</li>
+                            <li>Multiple loaders</li>
+                        </ul>
+                    </section>
+
+                    <section id="compare-ngx-cons">
+                        <h2>NGX-Translate: Cons</h2>
+                        <ul>
+                            <li>Requires asynchronous loading files then interpreting</li>
+                            <li>No meaning and context for tranlators</li>
+                        </ul>
+                    </section>
+
+                </section>
+
+                <section id="wrap-up">
+                    <section id="wrap-up-pick">
+                        <h2>Pick the solution that works for you</h2>
+                    </section>
+
+                    <section id="wrap-up-chill">
+                        <h2>Sit back &amp; let your users enjoy</h2>
+                        <img src="/assets/img/chill.jpg" class="chill" />
+                    </section>
+
+                    <section id="wrap-up-details">
+                        <img src="/assets/img/angularmix.png" class="no-style conf-logo-end--mix" title="AngularMix" />
+                        <p>
+                            Find me: <span title="twitter and github">@kiltedcode</span>
+                        </p>
+                        <p>
+                            <a href="https://kiltedcode.github.io/" title="dev blog">https://kiltedcode.github.io/</a>
+                        </p>
+                        <p>
+                            Code: <a href="https://github.com/KiltedCode/lets-get-local" title="code examples">https://github.com/KiltedCode/lets-get-local</a>
+                        </p>
+                        <p>
+                            Please provide feedback on EventsXD app.
+                        </p>
+                    </section>
+                </section>
+
+			</div>
+		</div>
+
+		<script src="node_modules/reveal.js/lib/js/head.min.js"></script>
+		<script src="node_modules/reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'node_modules/reveal.js/plugin/markdown/marked.js' },
+					{ src: 'node_modules/reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'node_modules/reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'node_modules/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
