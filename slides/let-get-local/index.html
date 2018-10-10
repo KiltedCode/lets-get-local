@@ -531,7 +531,7 @@ export class AppModule { }
                     <section id="ngx-translate-initialize">
                         <h2>Initialize the TranslateService</h2>
                         <p>
-                            Import <span class="inline-code">TranslateModule</span> &amp; configure with loader.
+                            Set up the service default and languages.
                         </p>
 <pre><code class="groovy" data-trim>
 export class HomeComponent {
@@ -584,7 +584,7 @@ export class HomeComponent {
     },
     ...
     "SUCCESS": {
-        "ADD_SCHEDULE": "Adicionado \"{{attraction}}\" com sucesso para agendar."
+        "ADD_SCHEDULE": "Adicionado {{attraction}} com sucesso para agendar."
     }
 }
 </code></pre>
@@ -633,7 +633,7 @@ this.translate.get(successMsg, {attraction: attraction})
             this.message = res;
         }
     );
-this.error = this.translate.instant(errorMsg);
+this.error = this.translate.instant(errorMsg, {attraction: attraction});
 </code></pre>
                         <aside class="notes">
                             Good for values returned from a backend.
