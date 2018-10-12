@@ -61,6 +61,10 @@ li .list-sub {
     padding-left: 1em;
 }
 
+li.sub-item {
+    margin-left: 20px;
+}
+
 pre.small-code {
     font-size: .4em;
 }
