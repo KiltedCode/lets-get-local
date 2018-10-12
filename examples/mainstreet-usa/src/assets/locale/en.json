@@ -21,6 +21,9 @@
   "INTRO": {
     "TEXT": "Welcome to Main Street U.S.A. in the Magic Kingdom! There is so much to see and do here, so use this guide to get you started. Select one of the above items to read more about what Main Street has to offer."
   },
+  "MENU": {
+    "BACK": "< Back"
+  },
   "MISI": {
     "IMG_ALT": "Move it and shake it with Judy and Nick.",
     "TEXT_1": "Brush up on your dance moves, grab your camera and get ready to raise the roof at the most awesome bash ever!",

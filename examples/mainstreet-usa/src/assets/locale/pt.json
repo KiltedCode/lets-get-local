@@ -21,6 +21,9 @@
   "INTRO": {
     "TEXT": "Bem-vindo à Main Street USA no Magic Kingdom! Há muito para ver e fazer aqui, então use este guia para você começar. Selecione um dos itens acima para ler mais sobre o que a Main Street tem a oferecer."
   },
+  "MENU": {
+    "BACK": "< Volte"
+  },
   "MISI": {
     "IMG_ALT": "Mova-se e agite-o com Judy e Nick.",
     "TEXT_1": "Atualize seus passos de dança, pegue sua câmera e prepare-se para celebrar na festa mais incrível de todos os tempos!",

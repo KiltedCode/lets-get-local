@@ -5,7 +5,7 @@ import { Router, NavigationEnd } from '@angular/router';
   selector: 'ms-menu',
   template: `
     <hr class="hr-menu" />
-    <a *ngIf="attraction" routerLink="/" class="menu-link">< Back</a>
+    <a *ngIf="attraction" routerLink="/" class="menu-link" [translate]="'MENU.BACK'">< Back</a>
     <ng-container *ngIf="!attraction">
       <a routerLink="/attraction/citizens" class="menu-link">Citizens of Main Street</a>
       <a routerLink="/attraction/dapper" class="menu-link">The Dapper Dans</a>
