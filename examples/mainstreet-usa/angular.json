@@ -75,7 +75,8 @@
               "outputPath": "dist/main-street-en/",
               "i18nFile": "src/locale/messages.en.xlf",
               "i18nFormat": "xlf",
-              "i18nLocale": "ed",
+              "i18nLocale": "en",
+
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -98,6 +99,7 @@
               "i18nFile": "src/locale/messages.pt-br.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "pt-br",
+
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
