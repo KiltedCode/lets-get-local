@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="kl" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="title" datatype="html">
+        <source>Main Street U.S.A.</source>
+        <target>Main Street U.S.A.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Main title of application.</note>
+        <note priority="1" from="meaning">title</note>
+      </trans-unit>
+      <trans-unit id="aboutLink" datatype="html">
+        <source>About Text</source>
+        <target>vIHtaHbogh bIngDaq ghItlh leghlu'</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Link to page about text.</note>
+      </trans-unit>
+      <trans-unit id="trolleyImageAlt" datatype="html">
+        <source>See the trolley kids sing and dance their way down the street.</source>
+        <target>trolley kids bom 'ej mI' Qorwagh tInwI' street vIlegh.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/trolley/trolley.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="trolleyText1" datatype="html">
+        <source>
+          Dressed in costumes from a bygone era, 12 performers ride a trolley until it stops for them to break out in song and dance.
+          They put on show for whoever is wandering the street.
+        </source>
+        <target>
+          paH qaStaHvIS jech vo' bov bygone, trolley lIgh 12 performers until chaHvaD ghor qaStaHvIS bom je mI' mev 'oH.
+          tuQmoH chaH cha' street wandering whoever.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/trolley/trolley.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Description of trolley show.</note>
+      </trans-unit>
+      <trans-unit id="trolleyText2" datatype="html">
+        <source>
+          Bursting with excitement, they belt out tunes such as &quot;The Most Magical Place on Earth,&quot;
+          &quot;Walkin&apos; Right Down the Middle of Main Street, U.S.A.&quot;
+          and “The Trolley Song&quot;—all seamlessly strung together and choreographed to lively dance routines.
+        </source>
+        <target>
+          bursting je excitement, qogh chaH loQ ghogh, vIghaj &apos;e&apos; such as &quot;HochHom Magical Daq tera&apos;.&quot;
+          &quot;yIt lugh tInwI&apos; potlhmo&apos; Street, u.s.a. botlh&quot;
+          &apos;ej &quot;Trolley bom&quot; — Hoch seamlessly nItebHa' SIrgh ghajHa'ghach lively mI' routines choreographed je.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/trolley/trolley.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">Description of music trolley show.</note>
+      </trans-unit>
+      <trans-unit id="trolleyText3" datatype="html">
+        <source>
+          So, stop when the trolley stops and be dazzled by the show!
+        </source>
+        <target>
+          vaj mev HeghDI' mev 'ej dazzle trolley pong cha'!
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/trolley/trolley.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">Invitation to trolley show.</note>
+      </trans-unit>
+      <trans-unit id="dapperDansImageAlt" datatype="html">
+        <source>Enjoy the sweet sounds of their singing.</source>
+        <target>vaj mev HeghDI' mev 'ej dazzle trolley pong cha'!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/dapper-dans/dapper-dans.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dapperDansText" datatype="html">
+        <source>
+          Gather &apos;round when the Dapper Dans come to town, the finest barbershop quartet in a 2-block radius!
+          Wearing their colorful pinstriped suits, straw hats and taps, this 4-man group sings a soulful a cappella Americana and Disney tunes.
+          Add tap dancing and “pun”-forgettable vaudeville humor, and you have an act the whole family will enjoy!
+        </source>
+        <target>
+          ghom round ghorgh lughoS Dapper dan veng SuvwI', finest barbershop quartet neH 2-bot radius!
+          chaH colorful pinstriped suits, straw mIv 'ej taps tuQ, americana 'ej disney loQ ghogh vIghaj 'e' bom soulful cappella ghom 4-loD.
+          tap dancing 'ej "pun" chel-'AY' 'e' tIv qorDu' naQ ghajbogh forgettable vaudeville humor 'ej!
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/dapper-dans/dapper-dans.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Description of the Dapper Dans.</note>
+      </trans-unit>
+      <trans-unit id="misiImageAlt" datatype="html">
+        <source>Move it and shake it with Judy and Nick.</source>
+        <target>'oH vIH 'ej 'oH shake judy nick je.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/misi/misi.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="misiText1" datatype="html">
+        <source>
+          Brush up on your dance moves, grab your camera and get ready to raise the roof at the most awesome bash ever!
+        </source>
+        <target>
+          brush mI' vIH, mIllogh qonwI' grab 'ej yIghuS qabDaj 'ach awesome bash pep reH beb!
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/misi/misi.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Intro to street party.</note>
+      </trans-unit>
+      <trans-unit id="misiText2" datatype="html">
+        <source>
+          You&apos;ll want to party it up when you see giant gift boxes circle in front of Cinderella Castle — their presence means the shindig is about to begin.
+          Use your camera to capture yourself as you bust a move in the middle of the celebration.
+          And be sure to use the tag #MoveitShakeitPics on your posts to keep the digital party going!
+        </source>
+        <target>
+          'oH ghom woDDI' ghorgh giant nob boxes gho in front of cinderella pa' Dalegh DaneH'a' — shindig jIqapruppu': tagh, qatlh qej presence.
+          mIllogh qonwI' DanoHmeH jon Hoch vIH qaStaHvIS botlh lopno' bust SoH.
+          'ej be 'oH 'e' maq per #moveitshakeitpics DanoHmeH posts digital ghom ghoS pol!
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/misi/misi.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Description of street party.</note>
+      </trans-unit>
+      <trans-unit id="citizensText1" datatype="html">
+        <source>
+          Make way for the horseless carriage! And say &quot;How d&apos;you do&quot; to some of the most fascinating folks you&apos;ll ever meet.
+          Smartly stylish in their early 20th-century finery, these larger-than-life small-town denizens can be spotted along Main Street throughout the day.
+        </source>
+        <target>
+          horseless lengmeH mIw chenmoH! jatlh "Dotlh d'you" 'op 'ach vuQ 'aqla' reH ghom SoH.
+          smartly stylish neH 'eq 20th vatlh DIS finery, laH chaDo'maq weghbogh-law'-yIn mach-veng SuvwI' denizens along potlhmo' Street qaStaHvIS jaj 'u'.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/citizens/citizens.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Description about citizens of main street.</note>
+      </trans-unit>
+      <trans-unit id="citizensText2" datatype="html">
+        <source>
+          They&apos;re always charmed to make your acquaintance and to bend your ear with the latest local scuttlebutt.
+          You might even be treated to a rousing recital from the Main Street choir. And don&apos;t forget your new-fangled camera.
+          These Citizens will be &quot;pleased as punch&quot; to pose for pictures.
+        </source>
+        <target>
+          chaH reH wejpuH ghotvam mIghqu' chenmoH je scuttlebutt latest lutu'lu'bej je teS SIH.
+          chaq vabDot treated SoH lengHa'taHvIS recital vo' potlhmo' Street choir. ej Qo' chu'-fangled mIllogh qonwI'.
+          nIb law' rewbe' ghaH "bel je HaSta" lol mIllogh.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/citizens/citizens.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Description about meeting citizens of main street.</note>
+      </trans-unit>
+      <trans-unit id="backLink" datatype="html">
+        <source>&lt; Back</source>
+        <target>&lt; wItI'nISmo' ghoS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/menu/menu.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Link to go back to main page.</note>
+      </trans-unit>
+      <trans-unit id="intro" datatype="html">
+        <source>
+          Welcome to Main Street U.S.A. in the Magic Kingdom!
+          There is so much to see and do here, so use this guide to get you started.
+          Select one of the above items to read more about what Main Street has to offer.
+        </source>
+        <target>
+          majQa' potlhmo' Street u.s.a. neH Magic Qun'a' wo'!
+          tu'lu' vIweghlI'meH vIlegh 'ej naDev Qu', vaj Dev DanoHmeH SoH started Suq.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/intro/intro.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Introduction paragraph.</note>
+      </trans-unit>
+      <trans-unit id="introImageAlt" datatype="html">
+        <source>Just around the corner is a Fantasyland.</source>
+        <target>neH around jIba'laH Fantasyland.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/intro/intro.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="mrffImageAlt" datatype="html">
+        <source>See all your friends sing, dance, and let it go.</source>
+        <target>Hoch bom, mI', 'ej loj rIntaH Dapeghchugh je legh.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/mrff/mrff.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="mrffText1" datatype="html">
+        <source>
+          This summer, skip-a-dee-doo-dah to the Cinderella Castle Forecourt stage for the fairest faire of them all!
+        </source>
+        <target>
+          poH tuj bI'reS, skip--dee-doo-Activate transport beam cinderella pa' Forecourt mIw fairest faire Hoch jatlh!
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/mrff/mrff.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Intro about stage show.</note>
+      </trans-unit>
+      <trans-unit id="mrffText2" datatype="html">
+        <source>
+          It takes a whole enchanted kingdom to put on this all-new, live stage show at Magic Kingdom park—and you’re cordially invited!
+          In preparation for this joyous festival, Mickey and friends have ventured far and wide to gather Disney pals from all
+          over to star in a royal friendship faire.
+        </source>
+        <target>
+          toDlu'meH enchant Qun'a' wo' tuQmoH Hoch-chu', mIw cha' DeSDu' Magic Qun'a' wo' park yIn tlhap 'oH — 'ej cordially vItlhobqa' SoH!
+          qaStaHvIS ram Qu'maj mung je joyous yupma', disney maqoch ghom vo' Hoch rIn Hov neH royal Qu' faire ventured Hop je juppu'DajvaD mickey juppu' je.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/mrff/mrff.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Description of stage show.</note>
+      </trans-unit>
+      <trans-unit id="mrffText3" datatype="html">
+        <source>
+          Goofy has invited Tiana and friends from the Land of the Bewitching Bayous to infuse a little spice of New Orleans jazz in the party.
+          Donald Duck brings some new friends he met at the Snuggly Duckling from the Land of Enchanted Woods to shake their tail feathers.
+          Daisy has asked Rapunzel and Flynn to “comb” over and sing along.
+          Mickey even recruited Olaf, Anna and Elsa from the Land of the Mystic Mountains to cast some extra cool touches!
+        </source>
+        <target>
+          tiana je jup vo' puH Bewitching Bayous loQ spice chu' orleans jazz neH ghom infuse Hochra' goofy.
+          jup chu' qem donald Duck DeSDu' snuggly Duckling vo' puH Enchanted woods shake tlhuQ bo ghom.
+          rapunzel 'ej flynn "jIb Ho'Du'" rIn 'ej bom along ghelta' daisy.
+          olaf, anna je vo' Mystic HuD puH elsa Hot DuywI' cool woDlu'chugh vabDot ghuv mickey!
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/mrff/mrff.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Description about characters in show.</note>
+      </trans-unit>
+      <trans-unit id="mrffText4" datatype="html">
+        <source>
+          This grand affair culminates in the joining of classic and contemporary Disney Characters in a spectacular show
+          featuring lively dancing, dazzling effects, an original song and memorable music from The Princess and the Frog, Tangled and Frozen.
+        </source>
+        <target>
+          qaStaHvIS muv classic 'ej contemporary disney vuDmey'e' neH spectacular cha' culminates vIpoSmoHmeH Qu'mey
+          feature lively mI', dazzle 'angbogh Da, original bom 'ej memorable QoQ Princess frog, Tangled 'ej taD 'ej.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/attr/mrff/mrff.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">Description about end of stage show.</note>
+      </trans-unit>
+      <trans-unit id="addScheduleButton" datatype="html">
+        <source>
+          + add to my schedule
+        </source>
+        <target>
+          + chel schedule
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-schedule/add-schedule.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Button to add attraction to schedule.</note>
+      </trans-unit>
+      <trans-unit id="addError" datatype="html">
+        <source>
+          Error adding to schedule.
+        </source>
+        <target>
+          Qagh chel schedule.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-schedule/add-schedule.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Message when error adding to schedule.</note>
+      </trans-unit>
+      <trans-unit id="addSuccess" datatype="html">
+        <source>
+          Added successfully to schedule.
+        </source>
+        <target>
+          chel successfully schedule.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/add-schedule/add-schedule.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Message when successfully adding to schedule.</note>
+      </trans-unit>
+      <trans-unit id="aboutText" datatype="html">
+        <source>
+          Description text for attractions from <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>https://disneyworld.disney.go.com/<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+          and © Disney, All Rights Reserved.
+        </source>
+        <target>
+          description bIngDaq ghItlh leghlu' attractions vo' <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>https://disneyworld.disney.go.com/<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+          je © Disney, Hoch nIH, Reserved.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-text/about-text.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Description about text source.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

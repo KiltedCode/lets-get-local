@@ -114,6 +114,29 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "kl": {
+              "aot": true,
+              "outputPath": "dist/main-street-kl/",
+              "baseHref": "/kl/",
+              "i18nFile": "src/locale/messages.kl.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "kl",
+
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
             }
           }
         },
@@ -131,6 +154,9 @@
             },
             "pt-br": {
               "browserTarget": "mainstreet-usa:build:pt-br"
+            },
+            "kl": {
+              "browserTarget": "mainstreet-usa:build:kl"
             }
           }
         },
