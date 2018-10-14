@@ -1,27 +1,13 @@
 # MainstreetUsa
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+This code example demonstrates how to integrate localization into your Angular web application.
+
+The [master](https://github.com/KiltedCode/lets-get-local/tree/master) angular-internationalization is a base example application.
+
+The [angular-internationalization](https://github.com/KiltedCode/lets-get-local/tree/angular-internationalization) branch demonstrates using the build localization tools provided by Angular. It creates compiled version of the application based on the locale. It currently supports English and Portuguese. When running the Portuguese version serves from `/pt-br`.
+
+The [ngx-translate](https://github.com/KiltedCode/lets-get-local/tree/ngx-translate) branch demonstrates using the ngx-translate library to provide dynamic translation of the application. The application is served up and will dynamically select the language based on the browser language. It currently supports English and Portuguese.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
