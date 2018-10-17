@@ -455,6 +455,18 @@ ng build --prod --i18n-file src/locale/messages.pt-br.xlf --i18n-format xlf --i1
                         </aside>
                     </section>
 
+                    <section id="template-translation-build">
+                        <h2>Fun with Translations</h2>
+                        <p>
+                            You can actually add translations for <em>any</em> language you want.
+                            Can be useful for testing purposes.
+                            I suggest just check to make sure you use locale not from the list of real ones.
+                        </p>
+<pre><code class="shell" data-trim>
+ng serve --configuration=kl
+</code></pre>                       
+                    </section>
+
                 </section>
                 
                 <section id="topic-ngx-translate">
@@ -698,6 +710,36 @@ this.error = this.translate.instant(errorMsg, {attraction: attraction});
 
                 </section>
 
+                <section id="topic-future">
+                    <section id="future-title">
+                        <h1 class="section-title">The Future of Angular Internationalization</h1>
+                    </section>
+
+                    <section id="compare-ng-pros">
+                        <h2>The Future</h2>
+                        <p>
+                            Angular Internationalization is updating with Ivy.
+                        </p>
+                        <img src="/assets/img/ivy-i18n.png" class="" />
+                        <p class="text-right">
+                            <a href="https://github.com/angular/angular/issues/16477"><small>https://github.com/angular/angular/issues/16477</small></a>
+                        </p>
+                    </section>
+
+                    <section id="compare-ng-pros">
+                        <h2>The Future</h2>
+                        <p>
+                            This is dependent on Ivy which will be released independent of v7.
+                            This won't be complete and ready until after Ivy is feature complete, 
+                            so no timetable on when to expect this yet.
+                        </p>
+                        <p class="text-right">
+                            <a href="https://github.com/angular/angular/issues/16477"><small>https://github.com/angular/angular/issues/16477</small></a>
+                        </p>
+                    </section>
+
+                </section>
+
                 <section id="wrap-up">
                     <section id="wrap-up-pick">
                         <h2>Pick the solution that works for you</h2>
@@ -709,7 +751,7 @@ this.error = this.translate.instant(errorMsg, {attraction: attraction});
                     </section>
 
                     <section id="wrap-up-details">
-                        <img src="/assets/img/angularmix.png" class="no-style conf-logo-end--mix" title="AngularMix" />
+                        <img src="/assets/img/connect-tech.png" class="no-style conf-logo-end" title="ConnectTech" />
                         <p>
                             Find me: <span title="twitter and github">@kiltedcode</span>
                         </p>
